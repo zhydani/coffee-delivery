@@ -11,6 +11,14 @@ export const TitleBox = styled.div`
 
 export const CoffeeListBox = styled.div`
   padding: 4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+`
+
+export const TagBox = styled.div`
+  display: flex;
+  gap: 0.3rem;
 `
 
 export const Card = styled.div`
@@ -37,7 +45,7 @@ export const Card = styled.div`
   span {
     background-color: ${(props) => props.theme['yellow-100']};
     color: ${(props) => props.theme['yellow-700']};
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 0.2rem 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -86,7 +94,7 @@ export const FormContainer = styled.div`
   }
 `
 
-export const CaffeeAmountInput = styled.input`
+export const CoffeeAmountInput = styled.input`
   background-color: ${(props) => props.theme['gray-400']};
   height: 2.5rem;
   border: 0;
@@ -105,7 +113,7 @@ export const CaffeeAmountInput = styled.input`
   width: 4rem;
 `
 
-export const AddCaffeeButton = styled.button`
+export const AddCoffeeButton = styled.button`
   border: 0;
   border-radius: 8px;
   padding: 0.5rem;
