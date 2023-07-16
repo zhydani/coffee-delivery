@@ -36,7 +36,7 @@ export const FormContainer = styled.div`
     }
   }
   form {
-    padding-top: 2rem;
+    padding-top: 1.5rem;
   }
 `
 
@@ -66,6 +66,8 @@ const BaseInput = styled.input`
 
   font-size: 0.875rem;
   padding: 0 0.5rem;
+  margin-top: 1rem;
+
   color: ${(props) => props.theme['gray-700']};
 
   &:focus {
@@ -80,4 +82,36 @@ const BaseInput = styled.input`
 export const CepInput = styled(BaseInput)`
   flex: 1;
   width: 12.5rem;
+`
+
+export const RuaInput = styled(BaseInput)`
+  flex: 1;
+  width: 35rem;
+`
+
+export const NumeroInput = styled(BaseInput)`
+  flex: 1;
+  width: 12.5rem;
+`
+
+export const ComplementoInput = styled(BaseInput)`
+  flex: 1;
+  width: 21.75rem;
+  margin-left: 0.75rem;
+`
+
+export const BairroInput = styled(BaseInput)`
+  flex: 1;
+  width: 12.5rem;
+`
+
+export const CidadeInput = styled(BaseInput)`
+  flex: 1;
+  width: 17.25rem;
+  margin: 0 0.75rem;
+`
+
+export const UfInput = styled(BaseInput)`
+  flex: 1;
+  width: 3.75rem;
 `

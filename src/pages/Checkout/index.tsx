@@ -1,11 +1,17 @@
 import { CurrencyDollar, MapPinLine } from 'phosphor-react'
 import {
+  BairroInput,
   CepInput,
   CheckoutContainer,
+  CidadeInput,
+  ComplementoInput,
   CurrencyDollarIcon,
   FormContainer,
   MapPinLineIcon,
+  NumeroInput,
+  RuaInput,
   SelectedCoffees,
+  UfInput,
 } from './styles'
 
 export function Checkout() {
@@ -24,7 +30,21 @@ export function Checkout() {
             </div>
           </header>
           <form action="">
-            <CepInput id="cep" placeholder="CEP" />
+            <div>
+              <CepInput id="cep" placeholder="CEP" />
+            </div>
+            <div>
+              <RuaInput id="rua" placeholder="Rua" />
+            </div>
+            <div>
+              <NumeroInput id="numero" placeholder="Número" />
+              <ComplementoInput id="complemento" placeholder="Complemento" />
+            </div>
+            <div>
+              <BairroInput id="bairro" placeholder="Bairro" />
+              <CidadeInput id="cidade" placeholder="Cidade" />
+              <UfInput id="uf" placeholder="UF" />
+            </div>
           </form>
         </FormContainer>
         <FormContainer>
