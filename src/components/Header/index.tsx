@@ -1,5 +1,5 @@
 import { HeaderContainer } from './styles'
-import { Scroll, Timer } from 'phosphor-react'
+import { MapPin, ShoppingCart } from 'phosphor-react'
 
 import logoIgnite from '../../assets/logo-coffee-delivery.svg'
 import { NavLink } from 'react-router-dom'
@@ -11,11 +11,12 @@ export function Header() {
         <img src={logoIgnite} alt="" />
       </span>
       <nav>
-        <NavLink to="/" title="Timer">
-          <Timer size={24} />
+        <NavLink to="/" title="Location">
+          <MapPin size={24} weight="fill" />
+          {/* Porto Alegre */}
         </NavLink>
-        <NavLink to="/history" title="Histórico">
-          <Scroll size={24} />
+        <NavLink to="/chekcout" title="Cart">
+          <ShoppingCart size={24} weight="fill" />
         </NavLink>
       </nav>
     </HeaderContainer>

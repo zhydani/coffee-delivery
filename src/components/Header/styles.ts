@@ -17,17 +17,28 @@ export const HeaderContainer = styled.header`
       justify-content: center;
       align-items: center;
 
-      color: ${(props) => props.theme['gray-100']};
+      border-radius: 8px;
 
-      border-top: 3px solid transparent;
-      border-bottom: 3px solid transparent;
+      color: ${(props) => props.theme['purple-700']};
+      background-color: ${(props) => props.theme['purple-100']};
 
       &:hover {
-        border-bottom: 3px solid ${(props) => props.theme['green-500']};
+        background-color: ${(props) => props.theme['purple-500']};
+        color: ${(props) => props.theme['purple-100']};
       }
 
-      &.active {
-        color: ${(props) => props.theme['green-500']};
+      /* &.active {
+        background-color: ${(props) => props.theme['purple-500']};
+        color: ${(props) => props.theme['purple-100']};
+      } */
+    }
+    a:nth-of-type(2) {
+      color: ${(props) => props.theme['yellow-700']};
+      background-color: ${(props) => props.theme['yellow-100']};
+
+      &:hover {
+        background-color: ${(props) => props.theme['yellow-500']};
+        color: ${(props) => props.theme['yellow-100']};
       }
     }
   }
