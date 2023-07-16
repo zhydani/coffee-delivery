@@ -7,7 +7,6 @@ import {
   TitleBox,
   TagBox,
 } from './styles'
-import coffee from '../../../../assets/coffees/expresso.png'
 import { ShoppingCart } from 'phosphor-react'
 
 interface Tag {
