@@ -10,8 +10,9 @@ export const HeaderContainer = styled.header`
     gap: 0.5rem;
 
     a {
-      width: 3rem;
+      width: 11rem;
       height: 3rem;
+      text-decoration: none;
 
       display: flex;
       justify-content: center;
@@ -32,7 +33,13 @@ export const HeaderContainer = styled.header`
         color: ${(props) => props.theme['purple-100']};
       } */
     }
+    span {
+      margin: 0 0.5rem;
+    }
     a:nth-of-type(2) {
+      width: 3rem;
+      height: 3rem;
+
       color: ${(props) => props.theme['yellow-700']};
       background-color: ${(props) => props.theme['yellow-100']};
 
