@@ -11,7 +11,7 @@ import {
   ItemsContainer,
   TitleBox,
 } from './styles'
-import ImageIntro from '../../../assets/image-intro.png'
+import ImageIntro from '../../../../assets/image-intro.png'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 
 export function Intro() {
