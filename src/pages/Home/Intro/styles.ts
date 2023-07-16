@@ -30,13 +30,19 @@ export const TitleBox = styled.div`
 export const ItemsBox = styled.div`
   width: 36rem;
   display: flex;
-  justify-content: space-between;
-  padding-right: 1rem;
+  /* justify-content: space-between; */
+  /* padding-right: 1rem; */
 `
 
 export const Item = styled.div`
   padding: 1rem 0;
   margin-top: 2.5rem;
+  margin-right: 2rem;
+`
+
+export const SecondItem = styled.div`
+  padding: 1rem 0;
+  margin-right: 1.6rem;
 `
 
 export const ItemIcon = styled.span`
@@ -52,6 +58,16 @@ export const ItemIconCart = styled(ItemIcon)`
 
 export const ItemIconPackage = styled(ItemIcon)`
   background-color: ${(props) => props.theme['gray-700']};
+`
+
+export const ItemIconTimer = styled(ItemIcon)`
+  background-color: ${(props) => props.theme['yellow-500']};
+  padding: 0.5rem 0.45rem 0.2rem;
+`
+
+export const ItemIconCoffee = styled(ItemIcon)`
+  background-color: ${(props) => props.theme['purple-500']};
+  padding: 0.5rem 0.45rem 0.2rem;
 `
 
 export const ItemText = styled.span`
