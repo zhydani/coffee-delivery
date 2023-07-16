@@ -2,6 +2,9 @@ import { styled } from 'styled-components'
 
 export const CheckoutContainer = styled.div`
   padding-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   h1 {
     font-family: 'Baloo 2', sans-serif;
     font-weight: 800;
@@ -16,6 +19,7 @@ export const FormContainer = styled.div`
   border-radius: 8px;
   width: 40rem;
   padding: 2rem;
+  margin-bottom: 0.8rem;
   header {
     display: flex;
     gap: 0.5rem;
@@ -35,4 +39,19 @@ export const FormContainer = styled.div`
 
 export const MapPinLineIcon = styled.div`
   color: ${(props) => props.theme['yellow-700']};
+`
+
+export const CurrencyDollarIcon = styled.div`
+  color: ${(props) => props.theme['purple-500']};
+`
+
+export const SelectedCoffees = styled.div`
+  background-color: ${(props) => props.theme['gray-200']};
+
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
+  width: 28rem;
+  height: 31.125rem;
+  padding: 2rem;
 `
