@@ -1,4 +1,5 @@
 import {
+  AddCaffeeButton,
   CaffeeAmountInput,
   Card,
   CoffeeListBox,
@@ -6,6 +7,7 @@ import {
   TitleBox,
 } from './styles'
 import coffee from '../../../../assets/coffees/expresso.png'
+import { ShoppingCart } from 'phosphor-react'
 
 export function CoffeeList() {
   return (
@@ -25,12 +27,17 @@ export function CoffeeList() {
               <h2>9,90</h2>
             </div>
             <FormContainer>
-              <CaffeeAmountInput
-                type="number"
-                id="coffeeAmount"
-                placeholder="0"
-                min={1}
-              />
+              <form>
+                <CaffeeAmountInput
+                  type="number"
+                  id="coffeeAmount"
+                  placeholder="0"
+                  min={1}
+                />
+                <AddCaffeeButton>
+                  <ShoppingCart size={24} weight="fill" type="submit" />
+                </AddCaffeeButton>
+              </form>
             </FormContainer>
           </footer>
         </Card>

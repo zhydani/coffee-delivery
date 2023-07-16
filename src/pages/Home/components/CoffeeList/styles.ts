@@ -79,7 +79,12 @@ export const Card = styled.div`
   }
 `
 
-export const FormContainer = styled.div``
+export const FormContainer = styled.div`
+  form {
+    display: flex;
+    gap: 0.5rem;
+  }
+`
 
 export const CaffeeAmountInput = styled.input`
   background-color: ${(props) => props.theme['gray-400']};
@@ -98,4 +103,21 @@ export const CaffeeAmountInput = styled.input`
     color: ${(props) => props.theme['gray-500']};
   }
   width: 4rem;
+`
+
+export const AddCaffeeButton = styled.button`
+  border: 0;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 2.375rem;
+  height: 2.375rem;
+
+  color: ${(props) => props.theme['gray-200']};
+  background-color: ${(props) => props.theme['purple-700']};
+
+  cursor: pointer;
+
+  /* :hover {
+    background-color: ${(props) => props.theme['purple-500']};
+  } */
 `
