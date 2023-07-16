@@ -27,3 +27,33 @@ export const TitleBox = styled.div`
     font-weight: 200;
   }
 `
+export const ItemsBox = styled.div`
+  width: 36rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+`
+
+export const Item = styled.div`
+  padding: 1rem 0;
+  margin-top: 2.5rem;
+`
+
+export const ItemIcon = styled.span`
+  width: 5rem;
+  border-radius: 50px;
+  padding: 0.5rem 0.4rem 0.2rem;
+  color: ${(props) => props.theme.white};
+`
+
+export const ItemIconCart = styled(ItemIcon)`
+  background-color: ${(props) => props.theme['yellow-700']};
+`
+
+export const ItemIconPackage = styled(ItemIcon)`
+  background-color: ${(props) => props.theme['gray-700']};
+`
+
+export const ItemText = styled.span`
+  padding-left: 0.7rem;
+`
