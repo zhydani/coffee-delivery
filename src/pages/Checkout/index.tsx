@@ -1,5 +1,6 @@
 import { CurrencyDollar, MapPinLine } from 'phosphor-react'
 import {
+  CepInput,
   CheckoutContainer,
   CurrencyDollarIcon,
   FormContainer,
@@ -22,7 +23,9 @@ export function Checkout() {
               <p>Informe o endereço onde deseja receber seu pedido</p>
             </div>
           </header>
-          <form action=""></form>
+          <form action="">
+            <CepInput id="cep" placeholder="CEP" />
+          </form>
         </FormContainer>
         <FormContainer>
           <header>

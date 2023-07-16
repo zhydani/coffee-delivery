@@ -18,7 +18,7 @@ export const FormContainer = styled.div`
   background-color: ${(props) => props.theme['gray-200']};
   border-radius: 8px;
   width: 40rem;
-  padding: 2rem;
+  padding: 2.5rem;
   margin-bottom: 0.8rem;
   header {
     display: flex;
@@ -34,6 +34,9 @@ export const FormContainer = styled.div`
       color: ${(props) => props.theme['gray-700']};
       padding-top: 0.2rem;
     }
+  }
+  form {
+    padding-top: 2rem;
   }
 `
 
@@ -54,4 +57,27 @@ export const SelectedCoffees = styled.div`
   width: 28rem;
   height: 31.125rem;
   padding: 2rem;
+`
+const BaseInput = styled.input`
+  background-color: ${(props) => props.theme['gray-300']};
+  height: 2.625rem;
+  border: 1px solid ${(props) => props.theme['gray-400']};
+  border-radius: 5px;
+
+  font-size: 0.875rem;
+  padding: 0 0.5rem;
+  color: ${(props) => props.theme['gray-700']};
+
+  &:focus {
+    box-shadow: none;
+    border-color: ${(props) => props.theme['yellow-500']};
+  }
+  &::placeholder {
+    color: ${(props) => props.theme['gray-600']};
+  }
+`
+
+export const CepInput = styled(BaseInput)`
+  flex: 1;
+  width: 12.5rem;
 `
