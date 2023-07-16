@@ -1,4 +1,10 @@
-import { Card, CoffeeListBox, TitleBox } from './styles'
+import {
+  CaffeeAmountInput,
+  Card,
+  CoffeeListBox,
+  FormContainer,
+  TitleBox,
+} from './styles'
 import coffee from '../../../../assets/coffees/expresso.png'
 
 export function CoffeeList() {
@@ -16,8 +22,16 @@ export function CoffeeList() {
           <footer>
             <div>
               <span>R$</span>
-              <span>9,90</span>
+              <h2>9,90</h2>
             </div>
+            <FormContainer>
+              <CaffeeAmountInput
+                type="number"
+                id="coffeeAmount"
+                placeholder="0"
+                min={1}
+              />
+            </FormContainer>
           </footer>
         </Card>
       </CoffeeListBox>
