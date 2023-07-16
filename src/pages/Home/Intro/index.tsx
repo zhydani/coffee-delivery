@@ -8,7 +8,7 @@ import {
   ItemIconTimer,
   ItemText,
   ItemsBox,
-  SecondItem,
+  ItemsContainer,
   TitleBox,
 } from './styles'
 import ImageIntro from '../../../assets/image-intro.png'
@@ -25,7 +25,7 @@ export function Intro() {
             hora
           </h2>
         </TitleBox>
-        <div>
+        <ItemsContainer>
           <ItemsBox>
             <Item>
               <ItemIconCart>
@@ -34,27 +34,27 @@ export function Intro() {
               <ItemText>Compra simples e segura</ItemText>
             </Item>
             <Item>
+              <ItemIconTimer>
+                <Timer size={16} weight="fill" />
+              </ItemIconTimer>
+              <ItemText>Entrega rápida e rastreada</ItemText>
+            </Item>
+          </ItemsBox>
+          <ItemsBox>
+            <Item>
               <ItemIconPackage>
                 <Package size={16} weight="fill" />
               </ItemIconPackage>
               <ItemText>Embalagem mantém o café intacto</ItemText>
             </Item>
-          </ItemsBox>
-          <ItemsBox>
-            <SecondItem>
-              <ItemIconTimer>
-                <Timer size={16} weight="fill" />
-              </ItemIconTimer>
-              <ItemText>Entrega rápida e rastreada</ItemText>
-            </SecondItem>
-            <SecondItem>
+            <Item>
               <ItemIconCoffee>
                 <Coffee size={16} weight="fill" />
               </ItemIconCoffee>
               <ItemText>O café chega fresquinho até você</ItemText>
-            </SecondItem>
+            </Item>
           </ItemsBox>
-        </div>
+        </ItemsContainer>
       </div>
       <ImageBox>
         <img src={ImageIntro} alt="" />

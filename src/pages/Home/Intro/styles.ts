@@ -27,28 +27,33 @@ export const TitleBox = styled.div`
     font-weight: 200;
   }
 `
+export const ItemsContainer = styled.div`
+  width: 37rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2.5rem;
+`
+
 export const ItemsBox = styled.div`
-  width: 36rem;
-  display: flex;
-  /* justify-content: space-between; */
-  /* padding-right: 1rem; */
+  /* gap: 1rem; */
 `
 
 export const Item = styled.div`
-  padding: 1rem 0;
-  margin-top: 2.5rem;
-  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
 `
 
-export const SecondItem = styled.div`
-  padding: 1rem 0;
-  margin-right: 1.6rem;
-`
+export const ItemIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-export const ItemIcon = styled.span`
-  width: 5rem;
+  width: 2rem;
+  height: 2rem;
+
   border-radius: 50px;
-  padding: 0.5rem 0.4rem 0.2rem;
   color: ${(props) => props.theme.white};
 `
 
@@ -62,14 +67,13 @@ export const ItemIconPackage = styled(ItemIcon)`
 
 export const ItemIconTimer = styled(ItemIcon)`
   background-color: ${(props) => props.theme['yellow-500']};
-  padding: 0.5rem 0.45rem 0.2rem;
 `
 
 export const ItemIconCoffee = styled(ItemIcon)`
   background-color: ${(props) => props.theme['purple-500']};
-  padding: 0.5rem 0.45rem 0.2rem;
 `
 
 export const ItemText = styled.span`
   padding-left: 0.7rem;
+  padding-top: 0.4rem;
 `
