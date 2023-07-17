@@ -1,6 +1,13 @@
-import { Info, MapPinIcon, OrderInfo, SuccessContainer } from './styles'
+import {
+  CurrencyDollarIcon,
+  Info,
+  MapPinIcon,
+  OrderInfo,
+  SuccessContainer,
+  TimerIcon,
+} from './styles'
 import delivery from '../../assets/delivery.png'
-import { MapPin } from 'phosphor-react'
+import { CurrencyDollar, MapPin, Timer } from 'phosphor-react'
 
 export function Success() {
   return (
@@ -19,6 +26,24 @@ export function Success() {
                 Entrega em Rua João Daniel Martinelli, 102 Farrapos - Porto
                 Alegre, RS
               </p>
+            </div>
+          </Info>
+          <Info>
+            <TimerIcon>
+              <Timer size={16} weight="fill" />
+            </TimerIcon>
+            <div>
+              <p>Previsão de entrega</p>
+              <p>20 min - 30 min</p>
+            </div>
+          </Info>
+          <Info>
+            <CurrencyDollarIcon>
+              <CurrencyDollar size={16} weight="fill" />
+            </CurrencyDollarIcon>
+            <div>
+              <p>Pagamento na entrega</p>
+              <p>Cartão de Crédito</p>
             </div>
           </Info>
         </OrderInfo>

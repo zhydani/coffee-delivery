@@ -38,6 +38,7 @@ export const OrderInfo = styled.div`
 export const Info = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
   p {
     font-size: 1rem;
     width: 19.375rem;
@@ -59,4 +60,12 @@ export const Icon = styled.div`
 
 export const MapPinIcon = styled(Icon)`
   background-color: ${(props) => props.theme['purple-500']};
+`
+
+export const TimerIcon = styled(Icon)`
+  background-color: ${(props) => props.theme['yellow-500']};
+`
+
+export const CurrencyDollarIcon = styled(Icon)`
+  background-color: ${(props) => props.theme['yellow-700']};
 `
